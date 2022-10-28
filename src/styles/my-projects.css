@@ -1,0 +1,15 @@
+.my-project-container {
+  padding-top: 10rem;
+}
+
+.header {
+  font-size: 2rem;
+  background: linear-gradient(to right, #00baff, #063ef9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.project-name {
+  font-weight: 700;
+}
