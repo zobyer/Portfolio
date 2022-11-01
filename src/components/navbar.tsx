@@ -34,15 +34,15 @@ const NavBar: React.FunctionComponent = () => {
               Home
             </Link>
 
-            <Link to="/" className="fg-grey1 text-decoration-none me-4">
-              About
+            <Link to="/work" className="fg-grey1 text-decoration-none me-4">
+              Work
             </Link>
-            <Link to="/" className="fg-grey1 text-decoration-none me-4">
+            {/* <Link to="/" className="fg-grey1 text-decoration-none me-4">
               Project
             </Link>
             <Link to="/" className="fg-grey1 text-decoration-none">
               Contact
-            </Link>
+            </Link> */}
           </div>
 
           <div className="hamburger-container d-block d-sm-none">

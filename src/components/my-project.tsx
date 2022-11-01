@@ -17,7 +17,7 @@ import Vue from "./tech-stack/vue";
 const MyProject = () => {
   return (
     <div className="bg-grey d-flex justify-content-center my-project-container">
-      <div className="custom-container ">
+      <div className="custom-container">
         <div className="pb-2">
           <h2 className="header">My Project</h2>
         </div>
