@@ -164,7 +164,7 @@ const MyProject = () => {
 
                   <div className="d-flex flex-start">
                     <a
-                      href="https://www.majhi.app/"
+                      href="https://www.seller.majhi.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       type="button"
@@ -398,12 +398,15 @@ const MyProject = () => {
                   </ul>
 
                   <div className="d-flex flex-start">
-                    <button
+                    <a
+                      href="https://mist.ac.bd/blog/cse/post/osmany_hall_mess_management_system-180"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       type="button"
                       className="btn btn-outline-primary px-4"
                     >
                       Live
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
