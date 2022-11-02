@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="d-flex ">
           <div>
             <a
-              href="https://www.manageyourecommerce.com/"
+              href="https://github.com/zobyer"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           <div className="ms-3">
             <a
-              href="https://github.com/zobyer"
+              href="https://www.linkedin.com/in/a-h-m-zobyer-192ab2204"
               target="_blank"
               rel="noopener noreferrer"
             >
