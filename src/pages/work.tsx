@@ -1,12 +1,18 @@
 import Footer from "../components/footer";
 import NavBar from "../components/navbar";
+import EducationCard from "../components/work/education-card";
 import ExperinceCard from "../components/work/experience-card";
+import Education from "../interfaces/education";
 import Experience from "../interfaces/experience";
 
 const ExperienceInfo: Experience[] = [
   {
     companyName: "Appnap Technologies Ltd",
+    companyLogo:
+      "https://drive.google.com/uc?export=view&id=1Z86ZeDPT3yXuzfE8VHXPkXTNxGLQNEhX",
     position: "Junior Software Engineer",
+    TechStack:
+      "Javascript, Vue.js, Nuxt.js, Html, Css, Sass, Laravel, MySql, Git, Jira",
     startingDate: "Oct 2021",
     endDate: "Ongoing",
     tasks: [
@@ -20,7 +26,11 @@ const ExperienceInfo: Experience[] = [
 
   {
     companyName: "Evident BD",
+    companyLogo:
+      "https://drive.google.com/uc?export=view&id=1l5AoLEfdmkaL3O0kIEx1_wLHJL43X7WB",
     position: "Junior Full Stack Developer",
+    TechStack:
+      "Python, Django, FastAPI, Celery, PostgreSql, Docker, Html, Css, Bulma, Laravel",
     startingDate: "Jun 2021",
     endDate: "Sep 2021",
     tasks: [
@@ -33,21 +43,55 @@ const ExperienceInfo: Experience[] = [
   },
 ];
 
+const EducationInfo: Education[] = [
+  {
+    institute: "Military Institute of Science & Technology",
+    instituteLogo:
+      "https://drive.google.com/uc?export=view&id=10vxBMp1Dk1sKFePNjHLFuqDDx2hKNrnv",
+    subject: "B Sc Computer Science & Engineering",
+    startDate: "2017",
+    endDate: "2021",
+  },
+];
+
 const Work = () => {
   return (
     <div className="bg-grey min-vh-100">
       <NavBar />
 
       <div className="d-flex justify-content-center mt-4">
-        <div className="container">
+        <div className="container mt-5">
+          <h2 className="experience-header text-start">Experience</h2>
           {ExperienceInfo.map((experience, index) => {
             return (
-              <div className="row mt-5 pt-5">
+              <div className="row mt-5" key={index}>
                 <div
                   className={`col-md-3 ${index % 2 === 0 ? `d-none` : ``}`}
                 ></div>
                 <div className="col-md-9">
                   <ExperinceCard Experience={experience} />
+                </div>
+                <div
+                  className={`col-md-3 ${index % 2 === 0 ? `` : `d-none`}`}
+                ></div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="d-flex justify-content-center mt-5">
+        <div className="container">
+          <h2 className="experience-header text-start">Education</h2>
+
+          {EducationInfo.map((education, index) => {
+            return (
+              <div className="row mt-5" key={index}>
+                <div
+                  className={`col-md-3 ${index % 2 === 0 ? `d-none` : ``}`}
+                ></div>
+                <div className="col-md-9">
+                  <EducationCard Education={education} />
                 </div>
                 <div
                   className={`col-md-3 ${index % 2 === 0 ? `` : `d-none`}`}

@@ -1,0 +1,26 @@
+.glass-bg {
+  background: linear-gradient(
+    114.67deg,
+    hsla(0, 0%, 100%, 0.65) 5%,
+    hsla(0, 0%, 99%, 0.08) 74.94%
+  );
+}
+
+.experience-header {
+  background: linear-gradient(to right, #00baff, #063ef9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.experience-card-holder {
+  transition: transform 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.experience-card-holder:hover {
+  -ms-transform: scale(1.03); /* IE 9 */
+  -webkit-transform: scale(1.03); /* Safari 3-8 */
+  transform: scale(1.03);
+}
