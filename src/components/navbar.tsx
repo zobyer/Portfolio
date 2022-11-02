@@ -34,8 +34,11 @@ const NavBar: React.FunctionComponent = () => {
               Home
             </Link>
 
-            <Link to="/work" className="fg-grey1 text-decoration-none me-4">
-              Work
+            <Link
+              to="/experience"
+              className="fg-grey1 text-decoration-none me-4"
+            >
+              Experience
             </Link>
             {/* <Link to="/" className="fg-grey1 text-decoration-none me-4">
               Project
