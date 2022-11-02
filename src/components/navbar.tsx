@@ -25,8 +25,13 @@ const NavBar: React.FunctionComponent = () => {
     <div className="App bg-grey">
       <div className={`py-4 px-4 ${topNavBarClass}`}>
         <div className="d-flex justify-content-between">
-          <div>
-            <h5>Zobyer</h5>
+          <div className="d-flex align-items-center">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1klQKdheJm02E0wPOKY9pHAP8wl9eiL2k"
+              alt=""
+              width={30}
+            />
+            <h5 className="mb-0 ms-2">Zobyer</h5>
           </div>
 
           <div className="hidden-xxs">
