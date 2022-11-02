@@ -4,6 +4,7 @@ import EducationCard from "../components/work/education-card";
 import ExperinceCard from "../components/work/experience-card";
 import Education from "../interfaces/education";
 import Experience from "../interfaces/experience";
+import { Link } from "react-router-dom";
 
 const ExperienceInfo: Experience[] = [
   {
@@ -99,6 +100,19 @@ const Work = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+
+      <div className="d-flex justify-content-center mt-5">
+        <div className="container">
+          <Link
+            to="/Zobyer_cv.pdf"
+            className="btn btn-outline-primary"
+            target="_blank"
+            download
+          >
+            Download my CV
+          </Link>
         </div>
       </div>
 
